@@ -6,10 +6,35 @@
   --fifth-black-color: #303030;
   --accent-color: #ff6c00;
   --main-background-color: #ffffff;
+  --typical-margin: 20px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  outline: 1px solid rebeccapurple;
 }
 
 .list {
@@ -27,6 +52,10 @@ body {
   text-transform: uppercase;
   color: var(--fifth-black-color);
 }
+img {
+  display: block;
+}
+
 .text {
   font-weight: 600;
   font-size: 11px;
@@ -38,6 +67,8 @@ body {
 /*--------------------------------------------------- HEADER---------------------------------------------------------- */
 .header {
   background-color: gray;
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
 
 .header-link {
@@ -69,6 +100,12 @@ body {
 .btn:focus {
   color: var(--accent-color);
 }
+/* -----------------------------------------HERO------------------------------------ */
+.hero-content {
+  background-color: #555555;
+  padding: 272px 96px 206px 96px;
+}
+
 .hero-link {
   font-weight: 600;
   font-size: 11px;
@@ -83,21 +120,28 @@ body {
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--main-white-color);
+  margin-bottom: var(--typical-margin);
 }
+.hero-top-text {
+  margin-bottom: var(--typical-margin);
+}
+
 .hero-bottom-text {
   font-size: 18px;
   line-height: 1.66;
   letter-spacing: 0.02em;
   color: var(--third-light-grey-color);
+  max-width: 400px;
 }
 /* ---------------------------------ABOUT------------------------- */
 .about {
   background-color: gray;
+  padding-top: 163px;
+  padding-bottom: 89px;
 }
-.background-color {
-  background-color: #555555;
+.about-top-text {
+  margin-bottom: var(--typical-margin);
 }
-
 .about-title {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -105,23 +149,28 @@ body {
   line-height: 1.17;
   letter-spacing: 0.05em;
   color: var(--fifth-black-color);
+  margin-bottom: var(--typical-margin);
 }
 .about-bottom-text {
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 1.66;
   color: var(--fourh-dark-grey-color);
+  margin-bottom: var(--typical-margin);
 }
 .about-text {
   font-size: 14px;
   line-height: 1.85;
   letter-spacing: 0.02em;
   color: var(--fourh-dark-grey-color);
+  margin-bottom: 40px;
 }
 
 /*------------------------ PRICES------------------------*/
 .prices {
   background-color: #555555;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 
 .prices-text {
@@ -131,6 +180,7 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--second-grey-color);
+  margin: var(--typical-margin);
 }
 .prices-title {
   font-family: "Raleway", sans-serif;
@@ -139,14 +189,24 @@ body {
   line-height: 1.16;
   letter-spacing: 0.05em;
   color: var(--main-white-color);
+  margin-bottom: 44px;
 }
 .prices-list {
   font-size: 18px;
   line-height: 1.66;
   letter-spacing: 0.02em;
   color: var(--third-light-grey-color);
+  border: 1px solid wheat;
+  padding: 30px 40px;
 }
-
+.prices-item {
+  margin-bottom: var(--typical-margin);
+}
+.prices-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+}
 .prices-button:hover,
 .prices-button:focus {
   color: var(--accent-color);
@@ -154,10 +214,18 @@ body {
 /* -------------------------BENEFITS----------------- */
 .benefits {
   background-color: var(--main-background-color);
+  padding-top: 143px;
+  padding-bottom: 137px;
 }
 
 .benefits-item {
   background-color: #f7f7f7;
+  width: 170px;
+  height: 143;
+  padding: 20px 24px;
+  border: 1px solid white;
+  display: block;
+  text-align: center;
 }
 
 .benefits-item-number {
@@ -183,6 +251,7 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--fifth-black-color);
+  margin-bottom: var(--typical-margin);
 }
 .benefits-title {
   font-family: "Raleway", sans-serif;
@@ -190,6 +259,7 @@ body {
   line-height: 1.16;
   letter-spacing: 0.05em;
   color: var(--fifth-black-color);
+  margin-bottom: var(--typical-margin);
 }
 .benefits-bottom-text {
   font-size: 18px;
@@ -200,6 +270,8 @@ body {
 /* -------------------MASTERS-------------------- */
 .masters {
   background-color: #f7f7f7;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 .masters-text {
   font-weight: 600;
@@ -208,6 +280,7 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--fifth-black-color);
+  margin-bottom: var(--typical-margin);
 }
 .masters-title {
   font-family: "Raleway", sans-serif;
@@ -215,6 +288,7 @@ body {
   line-height: 1.16;
   letter-spacing: 0.05em;
   color: var(--fifth-black-color);
+  margin-bottom: 44px;
 }
 .masters-item-title {
   font-size: 18px;
@@ -222,6 +296,8 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--fifth-black-color);
+  margin-top: 30px;
+  margin-bottom: 8px;
 }
 .masters-item-text {
   font-size: 14px;

@@ -11,10 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
+      <div class="container">
       <a class="header-logo" href="">
         <img src="./img/logo.svg" alt="лого сайта" />
       </a>
@@ -36,9 +38,11 @@
       </nav>
       <a class="header-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
       <button class="header-button btn" type="button">онлайн-запись</button>
+      </div>
     </header>
     <main>
       <section class="hero">
+        <div class="container">
         <ul class="hero-list list">
           <li class="hero-item">
             <a
@@ -59,16 +63,18 @@
             >
           </li>
         </ul>
-        <div class="background-color">
+        <div class="hero-content">
           <p class="hero-top-text text" lang="en">A hair salon for men in Kyiv</p>
           <h1 class="hero-title" lang="en">BarberShop</h1>
           <p class="hero-bottom-text">
-            Мы эксперты в модных мужских стрижках. <br />
+            Мы эксперты в модных мужских стрижках.
             Работаем быстро, осторожно и со вкусом.
           </p>
         </div>
+
       </section>
       <section id="about" class="about">
+        <div class="container">
         <ul class="about-list list">
           <li class="about-item">
             <img
@@ -91,7 +97,7 @@
         </ul>
         <p class="about-top-text text">О нас</p>
         <h2 class="about-title">
-          Лучший Барбершоп <br />
+          Лучший Барбершоп
           твоего города
         </h2>
         <p class="about-bottom-text">
@@ -106,49 +112,53 @@
           приходит!
         </p>
         <button type="button" class="about-button btn">онлайн-запись</button>
+        </div>
       </section>
       <section id="services" class="prices">
+        <div class="container">
         <p class="prices-text">Проведи время в компании лучших мастеров</p>
         <h2 class="prices-title">Услуги и цены</h2>
         <ul class="prices-list list">
           <li class="prices-item">
             <p class="prices-item-name">Мужская стрижка</p>
-            <p class="prices item servises">от 300 грн.</p>
+            <p class="prices-item-servises">от 300 грн.</p>
           </li>
           <li class="prices-item">
             <p class="prices-item-name">Стрижка бороды</p>
-            <p class="prices item servises">от 200 грн.</p>
+            <p class="prices-item-servises">от 200 грн.</p>
           </li>
           <li class="prices-item">
             <p class="prices-item-name">Стрижка усов</p>
-            <p class="prices item servises">от 200 грн.</p>
+            <p class="prices-item-servises">от 200 грн.</p>
           </li>
           <li class="prices-item">
             <p class="prices-item-name">Бритье опасной бритвой</p>
-            <p class="prices item servises">от 200 грн.</p>
+            <p class="prices-item-servises">от 200 грн.</p>
           </li>
         </ul>
         <ul class="prices-list list">
           <li class="prices-item">
             <p class="prices-item-name">Cтрижка у стажера</p>
-            <p class="prices item servises">от 50 грн.</p>
+            <p class="prices-item-servises">от 50 грн.</p>
           </li>
           <li class="prices-item">
             <p class="prices-item-name">Стрижка под насадку</p>
-            <p class="prices item servises">от 200 грн.</p>
+            <p class="prices-item-servises">от 200 грн.</p>
           </li>
           <li class="prices-item">
             <p class="prices-item-name">Детская стрижка (до 12 лет)</p>
-            <p class="prices item servises">от 300 грн.</p>
+            <p class="prices-item servises">от 300 грн.</p>
           </li>
           <li class="prices-item">
             <p class="prices-item-name">Камуфлирование седины</p>
-            <p class="prices item servises">от 200 грн.</p>
+            <p class="prices-item-servises">от 200 грн.</p>
           </li>
         </ul>
         <button type="button" class="prices-button btn">онлайн-запись</button>
+        </div>
       </section>
       <section class="benefits">
+        <div class="container">
         <ul class="benefits-list list">
           <li class="benefits-item">
             <span class="benefits-item-number">600</span>
@@ -173,8 +183,10 @@
           О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать,
           чем 10 раз прочитать.
         </p>
+        </div>
       </section>
       <section id="masters" class="masters">
+        <div class="container">
         <p class="masters-text">Для настоящих ценителей атмосферы</p>
         <h2 class="masters-title">Наши мастера</h2>
         <ul class="masters-list list">
@@ -197,7 +209,6 @@
               width="370"
               height="346"
             />
-            />
             <h3 class="masters-item-title" lang="en">Michele Doe</h3>
             <p class="masters-item-text" lang="en">Extreme Barber</p>
           </li>
@@ -209,11 +220,11 @@
               width="370"
               height="346"
             />
-            />
             <h3 class="masters-item-title" lang="en">Alan Black</h3>
             <p class="masters-item-text" lang="en">Extreme Barber</p>
           </li>
         </ul>
+        </div>
       </section>
       <section class="gallery">
         <p class="gallery-text">На латинском языке “барба” означает “борода”</p>
