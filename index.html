@@ -38,13 +38,14 @@
       </nav>
       <div class="header-connect">
       <a class="header-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
-      <button class="header-button btn" type="button">онлайн-запись</button>
+      <button class="header-button btn" type="button" data-modal-open>онлайн-запись</button>
       </div>
       </div>
     </header>
     <main>
       <section class="hero">
         <div class="container">
+          <div class="hero-soc">
         <ul class="hero-list list">
           <li class="hero-item">
             <a
@@ -65,6 +66,7 @@
             >
           </li>
         </ul>
+        </div>
         <div class="hero-content">
           <p class="hero-top-text text" lang="en">A hair salon for men in Kyiv</p>
           <h1 class="hero-title" lang="en">BarberShop</h1>
@@ -197,6 +199,7 @@
         <h2 class="masters-title">Наши мастера</h2>
         <ul class="masters-list list">
           <li class="masters-item">
+            <div class="masters-top-wrap">
             <img
               class="masters-item-image"
               src="./img/masters-img-1.jpg"
@@ -204,6 +207,8 @@
               width="370"
               height="346"
             />
+            <p class="masters-color-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est consectetur non fugiat voluptatibus obcaecati repudiandae incidunt distinctio sit ullam eveniet, doloribus id harum ipsum a deleniti tenetur quidem iusto! Amet. </p> 
+            </div>
             <h3 class="masters-item-title" lang="en">John Smith</h3>
             <p class="masters-item-text" lang="en">Extreme Barber</p>
             <ul class="masters-soc-list list">
@@ -380,5 +385,11 @@
         </li>
       </ul>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-button" data-modal-close>X</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
