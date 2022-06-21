@@ -330,6 +330,23 @@
         <div class="container">
       <section class="online">
         <h2 class="online-title">Онлайн-запись</h2>
+        <form class="online-form">
+          <div class="input-field">
+            <input type="text" class="online-input" name="online-name" id="online-name" placeholder=" "
+            />
+            <label for="online-name" class="online-label">Имя*</label>
+          </div>
+          <div class="input-field">
+            <input type="tel" class="online-input" name="online-tel" id="online-tel" placeholder=" "
+            />
+            <label for="online-tel" class="online-label">Телефон*</label>
+          </div>
+          <div class="text-field">
+            <textarea name="online-mess" id="online-mess" class="online-mess" placeholder=" "></textarea>
+            <label for="online-name" class="online-label">СООБЩЕНИЕ</label>
+          </div>
+           <button class="online-btn btn" type="submit" data-modal-open>отправить</button>
+        </form>
       </section>      
       <section class="contacts" id="contacts">
         <h2 class="contacts-title">Контакты</h2>
